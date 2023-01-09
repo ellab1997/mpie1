@@ -1,12 +1,39 @@
 fileFormatVersion: 2
-guid: 00b5c9f35b129114c93e978f436f489a
+guid: 44a03aed428e97147bd09ed5cedf9878
 ModelImporter:
   serializedVersion: 21300
-  internalIDToNameTable:
+  internalIDToNameTable: []
+  externalObjects:
   - first:
-      74: -203655887218126122
-    second: mixamo.com
-  externalObjects: {}
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Circle.001Mat
+    second: {fileID: 2100000, guid: 1ea2cfaa98a0b5d42aea24faa1a51bf8, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Circle.002Mat
+    second: {fileID: 2100000, guid: 1ea2cfaa98a0b5d42aea24faa1a51bf8, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Circle.003Mat
+    second: {fileID: 2100000, guid: 1ea2cfaa98a0b5d42aea24faa1a51bf8, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Circle.004Mat
+    second: {fileID: 2100000, guid: 1ea2cfaa98a0b5d42aea24faa1a51bf8, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: CircleMat
+    second: {fileID: 2100000, guid: d5428b8899994a74aad14b2edaa823fb, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: NurbsPath_MeshMat
+    second: {fileID: 2100000, guid: d5428b8899994a74aad14b2edaa823fb, type: 2}
   materials:
     materialImportMode: 2
     materialName: 0
@@ -34,36 +61,7 @@ ModelImporter:
     animationWrapMode: 0
     extraExposedTransformPaths: []
     extraUserProperties: []
-    clipAnimations:
-    - serializedVersion: 16
-      name: mixamo.com
-      takeName: mixamo.com
-      internalID: 0
-      firstFrame: 0
-      lastFrame: 77
-      wrapMode: 0
-      orientationOffsetY: 0
-      level: 0
-      cycleOffset: 0
-      loop: 0
-      hasAdditiveReferencePose: 0
-      loopTime: 1
-      loopBlend: 0
-      loopBlendOrientation: 0
-      loopBlendPositionY: 0
-      loopBlendPositionXZ: 0
-      keepOriginalOrientation: 0
-      keepOriginalPositionY: 1
-      keepOriginalPositionXZ: 0
-      heightFromFeet: 0
-      mirror: 0
-      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
-      curves: []
-      events: []
-      transformMask: []
-      maskType: 3
-      maskSource: {instanceID: 0}
-      additiveReferencePoseFrame: 0
+    clipAnimations: []
     isReadable: 0
   meshes:
     lODScreenPercentages: []
