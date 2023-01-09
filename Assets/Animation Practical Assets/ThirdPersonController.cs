@@ -30,10 +30,7 @@ public class ThirdPersonController : MonoBehaviour
     {
         float movement = Input.GetAxis("Vertical") * movementSpeed;
         float direction = Input.GetAxis("Mouse X") * rotationSpeed;
-        //my code
-        float movement_horizontal = Input.GetAxis("Horizontal") * movementSpeed;
-        float direction_horizontal = Input.GetAxis("Mouse Y") * rotationSpeed;
-        //
+       
 
         bool run = Input.GetAxis("Fire3") > 0.1f; // shift
         bool crouch = Input.GetAxis("Fire1") > 0.1f; // ctrl
@@ -53,12 +50,7 @@ public class ThirdPersonController : MonoBehaviour
         playerMove.SimpleMove(moveThisFrame);
         transform.Rotate(0.0f, direction, 0.0f);
 
-        Vector3 moveOne = new Vector3(0.0f, 0.0f, movement_horizontal);
-        moveOne = transform.TransformDirection(moveOne);
-
-        playerMove.SimpleMove(moveThisFrame);
-        transform.Rotate(0.0f, 0.0f, direction_horizontal);
-
+    
         
 
         bool jump = Input.GetAxis("Jump") > 0.1f; // space
