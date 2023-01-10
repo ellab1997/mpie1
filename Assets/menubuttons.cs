@@ -9,10 +9,6 @@ public class menubuttons : MonoBehaviour
     public void startGame(){
         SceneManager.LoadScene ("ye", LoadSceneMode.Single);
     }
-
-    public void loadControls(){
-       
-    }
    
     
 }
