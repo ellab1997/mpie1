@@ -30,6 +30,7 @@ public class ThirdPersonController : MonoBehaviour
     {
         float movement = Input.GetAxis("Vertical") * movementSpeed;
         float direction = Input.GetAxis("Mouse X") * rotationSpeed;
+
        
 
         bool run = Input.GetAxis("Fire3") > 0.1f; // shift
