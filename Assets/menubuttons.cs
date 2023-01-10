@@ -11,7 +11,7 @@ public class menubuttons : MonoBehaviour
     }
 
     public void loadControls(){
-        SceneManager.LoadScene ("controls", LoadSceneMode.Single);
+       
     }
    
     
