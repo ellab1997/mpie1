@@ -20,7 +20,7 @@ public class reset : MonoBehaviour
     {
         resetTrue(); 
        if(resetPressed == true)
-        SceneManager.LoadScene ("ye", LoadSceneMode.Single);
+        SceneManager.LoadScene ("menu", LoadSceneMode.Single);
     }
     void resetTrue(){
         bool resetButton = Input.GetAxis("reset") > 0.0f;
