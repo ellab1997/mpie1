@@ -4,6 +4,8 @@ using UnityStandardAssets.CrossPlatformInput;
 
 namespace UnityStandardAssets.Characters.FirstPerson
 {
+    //none of my code
+//coudln't figure out why the camera doesn't go up and down
     [Serializable]
     public class MouseLook
     {

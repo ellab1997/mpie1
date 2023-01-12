@@ -4,6 +4,7 @@ using UnityStandardAssets.Utility;
 
 namespace UnityStandardAssets.Characters.FirstPerson
 {
+    //none of this is my code
     public class HeadBob : MonoBehaviour
     {
         public Camera Camera;
