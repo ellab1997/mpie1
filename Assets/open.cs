@@ -16,9 +16,9 @@ public class open : MonoBehaviour
         
     }
     void OnTriggerEnter(Collider other){
-        if(other.gameObject.name == "FPSController"){
-                Animation openDoor = GetComponent<Animation>();
-                openDoor.Play();
-        }
+        GameObject parent = transform.parent.gameObject;  
+        Animation openDoor = parent.GetComponent<Animation>();
+        openDoor.Play("Take 001");
+        
     }
 }
