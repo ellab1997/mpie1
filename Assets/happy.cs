@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class run : MonoBehaviour
+public class happy : MonoBehaviour
 {
     bool isActive;
     // Start is called before the first frame update
