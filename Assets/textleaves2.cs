@@ -10,7 +10,7 @@ public class entertext : MonoBehaviour
     bool activateGoodAnimation;
     bool activateBadAnimation;
     private string input;
-    public GameObject inputBox;
+    public GameObject textBox;
 
     // Start is called before the first frame update
     void Start()
@@ -27,8 +27,8 @@ public class entertext : MonoBehaviour
         if(activateGoodAnimation == true){
             GameObject parentGood = transform.parent.gameObject;
             Animator anim = parentGood.GetComponent<Animator>();
-            anim.SetBool("first", activateGoodAnimation);
-            anim.Play("1");
+            anim.SetBool("second", activateGoodAnimation);
+            anim.Play("2");
         } 
 
         if(activateBadAnimation == true){
@@ -47,7 +47,7 @@ public class entertext : MonoBehaviour
         if(input == "i love you" || input == "be strong" || input == "you're amazing" || input == "youre amazing" || input == "grow well" || input == "stay healthy"){
             activateGoodAnimation = true;
             Debug.Log(activateGoodAnimation);
-            Destroy(inputBox);
+            Destroy(textBox);
         } else if (input == "i hate you" || input == "be weak" || input == "you're awful" || input == "youre awful" || input == "grow badly" || input == "be unhealthy") {
             activateBadAnimation = true; 
             Debug.Log(activateBadAnimation);
