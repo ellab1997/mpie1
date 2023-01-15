@@ -30,7 +30,7 @@ public class textleaves3 : MonoBehaviour
             mainObject.SetActive(true);
             Animator anim = GetComponent<Animator>();
             anim.SetBool("third", activateGoodAnimation);
-            anim.Play("Take 001");
+
         } 
 
         if(activateBadAnimation == true){

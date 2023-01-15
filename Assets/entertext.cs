@@ -18,7 +18,7 @@ public class entertext : MonoBehaviour
     {
         activateGoodAnimation = false;
         activateBadAnimation = false;
-        mainObject.SetActive(false);
+        mainObject.SetActive(true);
         inputBox.SetActive(true);
 
     }
@@ -30,7 +30,6 @@ public class entertext : MonoBehaviour
             mainObject.SetActive(true);
             Animator anim = GetComponent<Animator>();
             anim.SetBool("first", activateGoodAnimation);
-            anim.Play("Take 001");
         } 
 
         if(activateBadAnimation == true){
