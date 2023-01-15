@@ -20,7 +20,7 @@ public class textleaves2 : MonoBehaviour
         activateGoodAnimation = false;
         activateBadAnimation = false;
         mainObject.SetActive(false);
-
+        textBox.SetActive(true);
 
     }
 
@@ -29,8 +29,7 @@ public class textleaves2 : MonoBehaviour
     {
         if(activateGoodAnimation == true){
             mainObject.SetActive(true);
-            GameObject parentGood = transform.parent.gameObject;
-            Animator anim = parentGood.GetComponent<Animator>();
+            Animator anim = GetComponent<Animator>();
             anim.SetBool("second", activateGoodAnimation);
             anim.Play("2");
         } 

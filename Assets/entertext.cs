@@ -19,6 +19,7 @@ public class entertext : MonoBehaviour
         activateGoodAnimation = false;
         activateBadAnimation = false;
         mainObject.SetActive(false);
+        inputBox.SetActive(true);
 
     }
 
@@ -27,15 +28,13 @@ public class entertext : MonoBehaviour
     {
         if(activateGoodAnimation == true){
             mainObject.SetActive(true);
-            GameObject parentGood = transform.parent.gameObject;
-            Animator anim = parentGood.GetComponent<Animator>();
+            Animator anim = GetComponent<Animator>();
             anim.SetBool("first", activateGoodAnimation);
             anim.Play("1");
         } 
 
         if(activateBadAnimation == true){
-            GameObject parentBad = transform.parent.gameObject;
-            Animator anim = parentBad.GetComponent<Animator>();
+            Animator anim = GetComponent<Animator>();
             anim.SetBool("", activateBadAnimation);
         }
 

@@ -5,12 +5,12 @@ using UnityEngine.UI;
 //text input code from https://www.youtube.com/watch?v=guelZvubWFY&ab_channel=GameDevTraum
 
 
-public class textleaves3 : MonoBehaviour
+public class blueinput1 : MonoBehaviour
 {
     bool activateGoodAnimation;
     bool activateBadAnimation;
     private string input;
-    public GameObject textBox;
+    public GameObject inputBox;
     public GameObject mainObject;
 
     // Start is called before the first frame update
@@ -19,7 +19,7 @@ public class textleaves3 : MonoBehaviour
         activateGoodAnimation = false;
         activateBadAnimation = false;
         mainObject.SetActive(false);
-        textBox.SetActive(true);
+        inputBox.SetActive(true);
 
     }
 
@@ -29,13 +29,12 @@ public class textleaves3 : MonoBehaviour
         if(activateGoodAnimation == true){
             mainObject.SetActive(true);
             Animator anim = GetComponent<Animator>();
-            anim.SetBool("third", activateGoodAnimation);
-            anim.Play("3");
+            anim.SetBool("first", activateGoodAnimation);
+            anim.Play("1");
         } 
 
         if(activateBadAnimation == true){
-            GameObject parentBad = transform.parent.gameObject;
-            Animator anim = parentBad.GetComponent<Animator>();
+            Animator anim = GetComponent<Animator>();
             anim.SetBool("", activateBadAnimation);
         }
 
@@ -49,15 +48,11 @@ public class textleaves3 : MonoBehaviour
         input.ToLower();
         if(input == "i love you" || input == "be strong" || input == "you're amazing" || input == "youre amazing" || input == "grow well" || input == "stay healthy"){
             activateGoodAnimation = true;
-            Destroy(textBox);
+            Destroy(inputBox);
         } else if (input == "i hate you" || input == "be weak" || input == "you're awful" || input == "youre awful" || input == "grow badly" || input == "be unhealthy") {
             activateBadAnimation = true; 
         } else {
 
         }
     }
-    
 }
-
-
-
