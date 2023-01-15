@@ -11,20 +11,22 @@ public class entertext : MonoBehaviour
     bool activateBadAnimation;
     private string input;
     public GameObject inputBox;
+    public GameObject mainObject;
 
     // Start is called before the first frame update
     void Start()
     {
         activateGoodAnimation = false;
         activateBadAnimation = false;
+        mainObject.SetActive(false);
 
     }
 
     // Update is called once per frame
     void Update()
     {
-        //keep track of how many they've done so far correctly
         if(activateGoodAnimation == true){
+            mainObject.SetActive(true);
             GameObject parentGood = transform.parent.gameObject;
             Animator anim = parentGood.GetComponent<Animator>();
             anim.SetBool("first", activateGoodAnimation);
@@ -37,6 +39,7 @@ public class entertext : MonoBehaviour
             anim.SetBool("", activateBadAnimation);
         }
 
+
     }
 //this from tutorial
     public void textInput(string newText){
@@ -46,11 +49,9 @@ public class entertext : MonoBehaviour
         input.ToLower();
         if(input == "i love you" || input == "be strong" || input == "you're amazing" || input == "youre amazing" || input == "grow well" || input == "stay healthy"){
             activateGoodAnimation = true;
-            Debug.Log(activateGoodAnimation);
             Destroy(inputBox);
         } else if (input == "i hate you" || input == "be weak" || input == "you're awful" || input == "youre awful" || input == "grow badly" || input == "be unhealthy") {
             activateBadAnimation = true; 
-            Debug.Log(activateBadAnimation);
         } else {
 
         }

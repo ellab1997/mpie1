@@ -5,7 +5,7 @@ using UnityEngine.UI;
 //text input code from https://www.youtube.com/watch?v=guelZvubWFY&ab_channel=GameDevTraum
 
 
-public class textleaves2 : MonoBehaviour
+public class textleaves3 : MonoBehaviour
 {
     bool activateGoodAnimation;
     bool activateBadAnimation;
@@ -13,14 +13,12 @@ public class textleaves2 : MonoBehaviour
     public GameObject textBox;
     public GameObject mainObject;
 
-
     // Start is called before the first frame update
     void Start()
     {
         activateGoodAnimation = false;
         activateBadAnimation = false;
         mainObject.SetActive(false);
-
 
     }
 
@@ -31,8 +29,8 @@ public class textleaves2 : MonoBehaviour
             mainObject.SetActive(true);
             GameObject parentGood = transform.parent.gameObject;
             Animator anim = parentGood.GetComponent<Animator>();
-            anim.SetBool("second", activateGoodAnimation);
-            anim.Play("2");
+            anim.SetBool("third", activateGoodAnimation);
+            anim.Play("3");
         } 
 
         if(activateBadAnimation == true){
@@ -58,7 +56,7 @@ public class textleaves2 : MonoBehaviour
 
         }
     }
-
+    
 }
 
 
