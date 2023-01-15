@@ -18,9 +18,13 @@ public class doorani : MonoBehaviour
     }
 
     void OnTriggerEnter(Collider other){
-            isActive = true;
-            Animator anim = GetComponent<Animator>();
-            anim.SetBool("go", isActive);
+        isActive = true;
+        Animator anim = GetComponent<Animator>();
+        anim.SetBool("go", isActive);
         
+    }
+
+    void OnTriggerExit(Collider other){
+        isActive = false;
     }
 }
