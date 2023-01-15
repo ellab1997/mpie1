@@ -12,6 +12,7 @@ public class blueinput1 : MonoBehaviour
     private string input;
     public GameObject inputBox;
     public GameObject mainObject;
+    public GameObject previous;
 
     // Start is called before the first frame update
     void Start()
@@ -20,6 +21,7 @@ public class blueinput1 : MonoBehaviour
         activateBadAnimation = false;
         mainObject.SetActive(false);
         inputBox.SetActive(true);
+        previous.SetActive(false);
 
     }
 
@@ -29,8 +31,8 @@ public class blueinput1 : MonoBehaviour
         if(activateGoodAnimation == true){
             mainObject.SetActive(true);
             Animator anim = GetComponent<Animator>();
-            anim.SetBool("first", activateGoodAnimation);
-            anim.Play("1");
+            anim.SetBool("second", activateGoodAnimation);
+            anim.Play("Take 001");
         } 
 
         if(activateBadAnimation == true){

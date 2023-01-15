@@ -31,7 +31,7 @@ public class textleaves2 : MonoBehaviour
             mainObject.SetActive(true);
             Animator anim = GetComponent<Animator>();
             anim.SetBool("second", activateGoodAnimation);
-            anim.Play("2");
+            anim.Play("Take 001");
         } 
 
         if(activateBadAnimation == true){

@@ -30,7 +30,7 @@ public class entertext : MonoBehaviour
             mainObject.SetActive(true);
             Animator anim = GetComponent<Animator>();
             anim.SetBool("first", activateGoodAnimation);
-            anim.Play("1");
+            anim.Play("Take 001");
         } 
 
         if(activateBadAnimation == true){
