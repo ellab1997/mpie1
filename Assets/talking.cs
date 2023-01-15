@@ -17,16 +17,15 @@ public class talking : MonoBehaviour
         textobject1.SetActive(false);
         textobject2.SetActive(false);
         textobject3.SetActive(false);
-        isActive = false
+        isActive = false;
     }
 
     // Update is called once per frame
     void Update()
     {
-        if(isActive == true){
-            Animator anim = GetComponent<Animator>();
-            anim.SetBool("talking", isActive);
-        }
+        Animator anim = GetComponent<Animator>();
+        anim.SetBool("talking", isActive);
+        
     }
     void OnTriggerEnter(Collider other){
         textobject1.SetActive(true);
