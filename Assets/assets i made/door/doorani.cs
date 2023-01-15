@@ -14,13 +14,14 @@ public class doorani : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-
+        if(isActive == true){
+            Animator anim = GetComponent<Animator>();
+            anim.SetBool("go", isActive);
+        }
     }
 
     void OnTriggerEnter(Collider other){
         isActive = true;
-        Animator anim = GetComponent<Animator>();
-        anim.SetBool("go", isActive);
         
     }
 
