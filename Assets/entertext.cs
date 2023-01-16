@@ -7,11 +7,13 @@ using UnityEngine.UI;
 
 public class entertext : MonoBehaviour
 {
-    bool activateGoodAnimation;
+    public bool activateGoodAnimation = false;
     bool activateBadAnimation;
     private string input;
     public GameObject inputBox;
     public GameObject mainObject;
+    public GameObject toDestroy;
+    AudioSource audio;
 
     // Start is called before the first frame update
     void Start()
@@ -20,6 +22,7 @@ public class entertext : MonoBehaviour
         activateBadAnimation = false;
         mainObject.SetActive(true);
         inputBox.SetActive(true);
+        audio = GetComponent<AudioSource>();
 
     }
 
@@ -30,6 +33,7 @@ public class entertext : MonoBehaviour
             mainObject.SetActive(true);
             Animator anim = GetComponent<Animator>();
             anim.SetBool("first", activateGoodAnimation);
+            Destroy(toDestroy);
         } 
 
         if(activateBadAnimation == true){
@@ -47,6 +51,7 @@ public class entertext : MonoBehaviour
         input.ToLower();
         if(input == "i love you" || input == "be strong" || input == "you're amazing" || input == "youre amazing" || input == "grow well" || input == "stay healthy"){
             activateGoodAnimation = true;
+            audio.Play();
             Destroy(inputBox);
         } else if (input == "i hate you" || input == "be weak" || input == "you're awful" || input == "youre awful" || input == "grow badly" || input == "be unhealthy") {
             activateBadAnimation = true; 
