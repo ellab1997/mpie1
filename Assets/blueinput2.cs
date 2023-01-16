@@ -2,11 +2,12 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
-//text input code from https://www.youtube.com/watch?v=guelZvubWFY&ab_channel=GameDevTraum
+
 
 
 public class blueinput2 : MonoBehaviour
 {
+    //All of this is my own code except from the highlighted section
     public bool goodAnimation = false;
     bool activateBadAnimation;
     private string input;
@@ -43,10 +44,12 @@ public class blueinput2 : MonoBehaviour
 
 
     }
-//this from tutorial
+//The text input code starts here
+//From: https://www.youtube.com/watch?v=guelZvubWFY&ab_channel=GameDevTraum
+//Accessed 16/02/23
     public void textInput(string newText){
         input = newText;
-//to this
+//Ends here
         Debug.Log(input);
         input.ToLower();
         if(input == "i love you" || input == "be strong" || input == "you're amazing" || input == "youre amazing" || input == "grow well" || input == "stay healthy"){

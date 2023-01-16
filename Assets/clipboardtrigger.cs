@@ -5,6 +5,8 @@ using UnityEngine.UI;
 
 public class clipboardtrigger : MonoBehaviour
 {
+
+    //All of this is my own code
     public GameObject pic;
     public GameObject trigger;
     bool ePressed;

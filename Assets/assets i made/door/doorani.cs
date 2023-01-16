@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class doorani : MonoBehaviour
 {
+    //All of this is my own code
     bool isActive;
     // Start is called before the first frame update
     void Start()

@@ -3,7 +3,9 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
- //all code from this video https://www.youtube.com/watch?v=IvHqAzhIDSE&ab_channel=NotesFromANomad
+ //All of this code is from a tutorial 
+ //From: https://www.youtube.com/watch?v=IvHqAzhIDSE&ab_channel=NotesFromANomad
+ //Accessed 16/01/23
 
 public class texttriggernotdestroy : MonoBehaviour
 {

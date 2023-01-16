@@ -7,6 +7,7 @@ using UnityEngine.UI;
 
 public class blueinput1 : MonoBehaviour
 {
+        //All of this is my own code except the highlighted section
     bool activateGoodAnimation;
     bool activateBadAnimation;
     private string input;
@@ -42,10 +43,12 @@ public class blueinput1 : MonoBehaviour
 
 
     }
-//this from tutorial
+//The text input code starts here
+//From: https://www.youtube.com/watch?v=guelZvubWFY&ab_channel=GameDevTraum
+//Accessed 16/02/23
     public void textInput(string newText){
         input = newText;
-//to this
+//Ends here
         Debug.Log(input);
         input.ToLower();
         if(input == "i love you" || input == "be strong" || input == "you're amazing" || input == "youre amazing" || input == "grow well" || input == "stay healthy"){
