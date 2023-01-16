@@ -6,6 +6,7 @@ namespace UnityStandardAssets.Characters.FirstPerson
 {
     public class HeadBob : MonoBehaviour
     {
+            //None of this code is mine, it is unity code which I took from the practical files
         public Camera Camera;
         public CurveControlledBob motionBob = new CurveControlledBob();
         public LerpControlledBob jumpAndLandingBob = new LerpControlledBob();

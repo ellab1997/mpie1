@@ -2,7 +2,6 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
-//text input code from https://www.youtube.com/watch?v=guelZvubWFY&ab_channel=GameDevTraum
 
 
 public class textleaves2 : MonoBehaviour
@@ -39,10 +38,12 @@ public class textleaves2 : MonoBehaviour
 
 
     }
-//this from tutorial
+//The text input code starts here 
+//Location: https://www.youtube.com/watch?v=guelZvubWFY&ab_channel=GameDevTraum
+//Accessed 16/01/23
     public void textInput(string newText){
         input = newText;
-//to this
+//Ends here
         Debug.Log(input);
         input.ToLower();
         if(input == "i love you" || input == "be strong" || input == "you're amazing" || input == "youre amazing" || input == "grow well" || input == "stay healthy"){
